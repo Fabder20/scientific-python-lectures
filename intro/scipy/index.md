@@ -1060,8 +1060,10 @@ Before using {func}`scipy.integrate.solve_ivp`, the 2nd order ODE needs to be
 transformed into a system of first-order ODEs. Note that
 
 $$
-\frac{dy}{dt} = \dot{y}
-\frac{d\dot{y}}{dt} = \ddot{y} = -(2 \zeta \omega_0  \dot{y} + \omega_0^2 y)
+\begin{aligned}
+\frac{dy}{dt} &= \dot{y} \\
+\frac{d\dot{y}}{dt} &= \ddot{y} = -(2 \zeta \omega_0 \dot{y} + \omega_0^2 y)
+\end{aligned}
 $$
 
 If we define $z = [z_0, z_1]$ where $z_0 = y$ and $z_1 = \dot{y}$, then the
